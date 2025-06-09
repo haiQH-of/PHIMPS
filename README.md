@@ -23,3 +23,12 @@
 - **Khác**: Maven, Lombok, Jackson, Apache BeanUtils
 
 ## 📁 Cấu trúc dự án
+src/
+├── controller/ # Xử lý logic chung
+├── controlleradmin/ # Chức năng dành cho admin
+├── controlleruser/ # Chức năng dành cho người dùng
+├── dao/ # Giao diện DAO
+├── impl/ # Cài đặt DAO bằng Hibernate
+├── entity/ # Entity ánh xạ cơ sở dữ liệu
+├── filter/ # Các bộ lọc xác thực & xử lý
+└── META-INF/persistence.xml # Cấu hình JPA
