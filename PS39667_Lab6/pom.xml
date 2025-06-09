@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<modelVersion>4.0.0</modelVersion>
+
+<groupId>PS39792</groupId>
+<artifactId>PS39792</artifactId>
+<version>0.0.1-SNAPSHOT</version>
+<packaging>war</packaging>
+
+<dependencies>
+<!-- Jakarta Servlet APIs - Required for JSP compilation -->
+<dependency>
+<groupId>jakarta.servlet</groupId>
+<artifactId>jakarta.servlet-api</artifactId>
+<version>6.0.0</version>
+<scope>provided</scope>
+</dependency>
+<dependency>
+<groupId>jakarta.servlet.jsp</groupId>
+<artifactId>jakarta.servlet.jsp-api</artifactId>
+<version>3.1.1</version>
+<scope>provided</scope>
+</dependency>
+<dependency>
+<groupId>jakarta.el</groupId>
+<artifactId>jakarta.el-api</artifactId>
+<version>5.0.1</version>
+<scope>provided</scope>
+</dependency>
+
+<!-- JSTL Dependencies -->
+<dependency>
+<groupId>org.glassfish.web</groupId>
+<artifactId>jakarta.servlet.jsp.jstl</artifactId>
+<version>3.0.1</version>
+</dependency>
+<dependency>
+<groupId>jakarta.servlet.jsp.jstl</groupId>
+<artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+<version>2.0.0</version>
+</dependency>
+
+<!-- JSON Processing -->
+<dependency>
+<groupId>org.json</groupId>
+<artifactId>json</artifactId>
+<version>20230227</version>
+</dependency>
+
+<!-- Email Dependencies -->
+<dependency>
+<groupId>com.sun.mail</groupId>
+<artifactId>javax.mail</artifactId>
+<version>1.6.2</version>
+</dependency>
+<dependency>
+<groupId>javax.activation</groupId>
+<artifactId>activation</artifactId>
+<version>1.1.1</version>
+</dependency>
+
+<!-- Jackson JSON Processing -->
+<dependency>
+<groupId>com.fasterxml.jackson.core</groupId>
+<artifactId>jackson-databind</artifactId>
+<version>2.17.1</version>
+</dependency>
+
+<!-- Lombok -->
+<dependency>
+<groupId>org.projectlombok</groupId>
+<artifactId>lombok</artifactId>
+<version>1.18.36</version>
+<scope>provided</scope>
+</dependency>
+
+<!-- Hibernate ORM -->
+<dependency>
+<groupId>org.hibernate.orm</groupId>
+<artifactId>hibernate-core</artifactId>
+<version>6.6.1.Final</version>
+</dependency>
+
+<!-- SQL Server JDBC Driver -->
+<dependency>
+<groupId>com.microsoft.sqlserver</groupId>
+<artifactId>mssql-jdbc</artifactId>
+<version>12.8.1.jre11</version>
+</dependency>
+
+<!-- Apache Commons BeanUtils -->
+<dependency>
+<groupId>commons-beanutils</groupId>
+<artifactId>commons-beanutils</artifactId>
+<version>1.9.4</version>
+</dependency>
+</dependencies>
+
+<build>
+<plugins>
+<plugin>
+<artifactId>maven-compiler-plugin</artifactId>
+<version>3.8.1</version>
+<configuration>
+<release>17</release>
+</configuration>
+</plugin>
+<plugin>
+<artifactId>maven-war-plugin</artifactId>
+<version>3.2.3</version>
+</plugin>
+</plugins>
+</build>
+</project>

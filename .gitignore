@@ -1,0 +1,27 @@
+# IDE Files
+**/.idea/
+!**/.idea/vcs.xml
+**/.vscode/
+**/.settings/
+**/.project
+**/.classpath
+**/.factorypath
+.metadata/
+
+# Build directories
+**/target/
+**/build/
+**/out/
+
+# Compiled files
+**/*.class
+**/*.jar
+**/*.war
+**/*.ear
+
+# Log files
+**/*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
